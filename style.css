@@ -1,0 +1,49 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-size: 0px;
+}
+body{
+  background: url(space1.jpg);
+}
+.space{
+  position: relative;
+}
+.earth img{
+  position: absolute;
+  height:300px;
+  width: 300px; 
+  z-index: 2;
+  margin-top: 100px;
+  margin-left: 200px;
+ 
+}
+.moon img{
+  position: absolute;
+  margin-top: 180px;
+  margin-left: 60px;
+  height: 100px;
+  width: 100px;
+  animation: spin linear infinite;
+  animation-duration: 10s;
+}
+
+@keyframes spin {
+   0%   {margin-top: 180px; margin-left: 60px;}
+  7%  {margin-top: 150px; margin-left: 130px;}
+  14%  {margin-top: 150px; margin-left: 250px; z-index: 1}
+  22%  {margin-top: 150px; margin-left: 450px;z-index: 1}
+  30% {margin-top: 210px; margin-left: 500px;}
+  36% {margin-top: 220px; margin-left: 550px;}
+  43% {margin-top: 270px; margin-left: 500px; z-index: 2;}
+  50% {margin-top: 280px; margin-left: 450px;}
+  65% {margin-top: 270px; margin-left: 350px;}
+  74% {margin-top: 260px; margin-left: 300px;}
+  83% {margin-top: 250px; margin-left: 250px;}
+  90% {margin-top: 240px; margin-left: 250px;}
+  92% {margin-top: 220px; margin-left: 190px;}
+  95% {margin-top: 200px; margin-left: 130px;}
+  100% {margin-top: 180px; margin-left: 90px;}
+
+}
+
